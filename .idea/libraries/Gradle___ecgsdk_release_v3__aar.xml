@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :ecgsdk-release-v3:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/690c3a0c04af983b88f33d93c85f636a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/690c3a0c04af983b88f33d93c85f636a/res" />
+      <root url="file://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/690c3a0c04af983b88f33d93c85f636a/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

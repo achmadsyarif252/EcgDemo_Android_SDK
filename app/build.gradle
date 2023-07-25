@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.befem.sdk.ecgdemo"
+        minSdkVersion 19
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    signingConfigs {
+        release {
+            storeFile file("sign.jks")
+            storePassword '123456'
+            keyAlias 'ecg'
+            keyPassword '123456'
+        }
+        debug {
+            storeFile file('sign.jks')
+            storePassword '123456'
+            keyAlias 'ecg'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+//          proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    repositories {
+
+        flatDir {
+
+            dirs'libs'
+
+        }
+
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    implementation 'com.github.yilylong:CBDialog:1.1.1'
+    implementation 'com.kaopiz:kprogresshud:1.0.5'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    implementation 'me.shaohui:bottomdialog:1.1.9'
+    implementation 'com.inuker.bluetooth:library:1.4.0'
+    implementation 'cn.bingoogolapple:bga-qrcode-zbar:1.3.6'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation (name:'ecgsdk-release-v3',ext:'aar')
+}

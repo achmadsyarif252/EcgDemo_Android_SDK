@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yilylong:CBDialog:1.1.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/a83a3b7d34dce96df07073cd4a922755/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/a83a3b7d34dce96df07073cd4a922755/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/a83a3b7d34dce96df07073cd4a922755/res" />
+      <root url="file://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/a83a3b7d34dce96df07073cd4a922755/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

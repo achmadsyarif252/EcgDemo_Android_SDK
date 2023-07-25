@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_white_round_shape"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+    <!-- 自定义图标 -->
+
+    <ImageView
+        android:id="@+id/custom_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+    <!-- 警告图标 -->
+
+    <FrameLayout
+        android:id="@+id/warning_frame"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/warning_circle1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/warning_sign1"/>
+    </FrameLayout>
+    <!-- 成功图标 -->
+
+
+    <!--
+    <FrameLayout
+        android:id="@+id/success_frame"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/success_bow" />
+
+        <com.cb.cbdialog.pedant.SweetAlert.SuccessTickView
+            android:id="@+id/success_tick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+                   <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/dialog_title_text_color</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </FrameLayout>
+    -->
+    <!-- 对话框标题 和图标 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_title"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:textSize="19sp"/>
+
+    <!-- 对话框消息内容 -->
+
+    <LinearLayout
+        android:id="@+id/dialog_msg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_message"
+            style="@style/dialog_msg_style"
+            android:textColor="@color/color_gray"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+    <!-- 对话框确定/取消按钮 -->
+
+    <LinearLayout
+        android:id="@+id/dialog_btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_posi_btn"
+            style="@style/dialog_button_style"
+            android:background="@drawable/btn_blue_round_shape"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

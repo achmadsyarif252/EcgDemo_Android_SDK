@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EDF9FF"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_tips"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/iv"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/tvh"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/sel_login_border_line_round1"
+        android:text="下一步"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

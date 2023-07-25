@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EDF9FF"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请确保输入的是您的（家庭）常用WiFi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        >
+
+        <TextView
+            android:id="@+id/ivPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="(家庭) 常用WiFi网络名称"
+            android:textColor="#231916"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivPhone"
+            android:hint="暂不支持中文名称"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_marginLeft="20dp"
+            android:maxLength="14"
+            android:background="@null"
+            android:textSize="15sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/etPhone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cde3ef"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="1dp"
+
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/ivPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="WiFi密码"
+
+
+                android:textColor="#231916"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivPassword"
+                android:maxLength="14"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/etPassword"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="#cde3ef"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:textColor="#6e5c43"
+            android:layout_alignParentTop="true"
+            android:text="首次登陆用户我们将自动为您创建新账户"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_below="@+id/tvh"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sel_login_border_line_round"
+            android:text="建立连接"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/tvYzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/sel_login_border_line_round"
+            android:enabled="false"
+            android:padding="10dp"
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

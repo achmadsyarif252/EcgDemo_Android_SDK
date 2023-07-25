@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: me.shaohui:bottomdialog:1.1.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/8873523b27c0ca636e31369ca379d0ca/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/8873523b27c0ca636e31369ca379d0ca/res" />
+      <root url="file://$USER_HOME$/Android/Sdk/caches/transforms-2/files-2.1/8873523b27c0ca636e31369ca379d0ca/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://H:/AndroidStudio/as_service_dir/caches/modules-2/files-2.1/me.shaohui/bottomdialog/1.1.9/20529f33d6ab151d13624e1ca33cfc889136d234/bottomdialog-1.1.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://H:/AndroidStudio/as_service_dir/caches/modules-2/files-2.1/me.shaohui/bottomdialog/1.1.9/9be370f61ee7288490139da8a97503e6508110ef/bottomdialog-1.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
